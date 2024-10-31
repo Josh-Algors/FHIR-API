@@ -1,0 +1,167 @@
+const { Feedback } = require("../models/feedback");
+const { Preference } = require("../models/preference");
+const { Image } = require("../models/images");
+const { Log } = require("../models/log");
+const { Template } = require("../models/template");
+
+
+
+//logFeedback
+const logFeedback = async (data) => {
+
+    await Feedback.create({
+        user_id: data.user_id,
+        slider_id: data.slider_id,
+        is_human: data.isHuman,
+        feedback: data.feedback
+    });
+
+    return;
+};
+
+//logFavorite
+const logFavorite = async (data) => {
+
+    await Preference.create({
+        user_id: data.user_id,
+        slider_id: data.slider_id,
+        rating: data.rating
+    });
+
+    return;
+};
+
+const updateFavorite = async (data) => {
+
+    await Preference.updateOne({
+        user_id: data.user_id
+    },
+    {$set: {slider_id: data.slider_id}});
+
+    return;
+};
+
+const checkFavorite = async (data) => {
+
+   const info = await Preference.findOne({
+        user_id: data.user_id
+    });
+
+    return info;
+};
+
+//checkSlider
+const checkSlider = async (data) => {
+
+    const info = await Image.findOne({
+         human_or_robot: data.human_or_robot,
+         eyes: data.eyes,
+         nose: data.nose,
+         mouth: data.mouth
+     });
+ 
+     return info;
+ };
+
+ //logSlider
+ const logSlider = async (data, image) => {
+
+    const info = await Image.create({
+         template_id: data.template_id,  
+         human_or_robot: data.human_or_robot,
+         eyes: data.eyes,
+         nose: data.nose,
+         mouth: data.mouth,
+         base_64: image
+     });
+ 
+     return info;
+ };
+
+ //getSlider
+ const getSlider = async (id) => {
+
+    const info = await Image.findOne({
+        _id: id,
+     });
+ 
+     return info;
+ };
+
+ //logUserSlider
+ const logUserSlider = async (data) => {
+
+    const info = await Log.create({
+         user_id: data.user_id,
+         slider_id: data.slider_id,
+         template_id: data.template_id
+     });
+ 
+     return info;
+ };
+
+ //checkTemplate
+ const checkTemplate = async (image_url) => {
+
+    const info = await Template.findOne({
+         url: image_url,
+     });
+ 
+     return info;
+ };
+
+ //checkTemplateById
+ const checkTemplateById = async (id) => {
+
+    const info = await Template.findOne({
+         _id: id,
+     });
+ 
+     return info;
+ };
+
+ //addTemplate
+ const addTemplate = async (image_url, mask_url) => {
+
+    const info = await Template.create({
+         url: image_url,
+         mask_url: mask_url
+     });
+ 
+     return info;
+ };
+
+ //allTemplates
+ const allTemplates = async () => {
+
+    const info = await Template.find();
+ 
+     return info;
+ };
+
+ //favorites
+ const favorites = async (user_id) => {
+
+    const info = await Preference.find({
+         user_id: user_id
+     });
+ 
+     return info;
+ };
+ 
+
+module.exports = {
+    logFeedback,
+    logFavorite,
+    checkFavorite,
+    updateFavorite,
+    checkSlider,
+    logSlider,
+    logUserSlider,
+    checkTemplate,
+    addTemplate,
+    allTemplates,
+    favorites,
+    getSlider,
+    checkTemplateById
+}
