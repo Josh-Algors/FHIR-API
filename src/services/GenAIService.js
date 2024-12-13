@@ -27,7 +27,7 @@ async function generateImage(images, prompt) {
           apply_watermark: true,
           high_noise_frac: 0.8,
           negative_prompt: "",
-          prompt_strength: 0.95,
+          prompt_strength: 0.90,
           num_inference_steps: 50,
         },
       }

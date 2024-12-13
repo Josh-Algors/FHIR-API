@@ -1,0 +1,280 @@
+Eyes,Nose,Mouth,Encoded
+,,No mouth,Tm8gbW91dGg=
+,,Mouth open,TW91dGggb3Blbg==
+,,Smiling,U21pbGluZw==
+,No nose,,Tm8gbm9zZQ==
+,No nose,No mouth,Tm8gbm9zZU5vIG1vdXRo
+,No nose,Mouth open,Tm8gbm9zZU1vdXRoIG9wZW4=
+,No nose,Smiling,Tm8gbm9zZVNtaWxpbmc=
+,Square nostrils,,U3F1YXJlIG5vc3RyaWxz
+,Square nostrils,No mouth,U3F1YXJlIG5vc3RyaWxzTm8gbW91dGg=
+,Square nostrils,Mouth open,U3F1YXJlIG5vc3RyaWxzTW91dGggb3Blbg==
+,Square nostrils,Smiling,U3F1YXJlIG5vc3RyaWxzU21pbGluZw==
+,Triangular nostrils,,VHJpYW5ndWxhciBub3N0cmlscw==
+,Triangular nostrils,No mouth,VHJpYW5ndWxhciBub3N0cmlsc05vIG1vdXRo
+,Triangular nostrils,Mouth open,VHJpYW5ndWxhciBub3N0cmlsc01vdXRoIG9wZW4=
+,Triangular nostrils,Smiling,VHJpYW5ndWxhciBub3N0cmlsc1NtaWxpbmc=
+,Rectangular nostrils,,UmVjdGFuZ3VsYXIgbm9zdHJpbHM=
+,Rectangular nostrils,No mouth,UmVjdGFuZ3VsYXIgbm9zdHJpbHNObyBtb3V0aA==
+,Rectangular nostrils,Mouth open,UmVjdGFuZ3VsYXIgbm9zdHJpbHNNb3V0aCBvcGVu
+,Rectangular nostrils,Smiling,UmVjdGFuZ3VsYXIgbm9zdHJpbHNTbWlsaW5n
+,Smaller nostrils,,U21hbGxlciBub3N0cmlscw==
+,Smaller nostrils,No mouth,U21hbGxlciBub3N0cmlsc05vIG1vdXRo
+,Smaller nostrils,Mouth open,U21hbGxlciBub3N0cmlsc01vdXRoIG9wZW4=
+,Smaller nostrils,Smiling,U21hbGxlciBub3N0cmlsc1NtaWxpbmc=
+,Larger nostrils,,TGFyZ2VyIG5vc3RyaWxz
+,Larger nostrils,No mouth,TGFyZ2VyIG5vc3RyaWxzTm8gbW91dGg=
+,Larger nostrils,Mouth open,TGFyZ2VyIG5vc3RyaWxzTW91dGggb3Blbg==
+,Larger nostrils,Smiling,TGFyZ2VyIG5vc3RyaWxzU21pbGluZw==
+Squares,,,U3F1YXJlcw==
+Squares,,No mouth,U3F1YXJlc05vIG1vdXRo
+Squares,,Mouth open,U3F1YXJlc01vdXRoIG9wZW4=
+Squares,,Smiling,U3F1YXJlc1NtaWxpbmc=
+Squares,No nose,,U3F1YXJlc05vIG5vc2U=
+Squares,No nose,No mouth,U3F1YXJlc05vIG5vc2VObyBtb3V0aA==
+Squares,No nose,Mouth open,U3F1YXJlc05vIG5vc2VNb3V0aCBvcGVu
+Squares,No nose,Smiling,U3F1YXJlc05vIG5vc2VTbWlsaW5n
+Squares,Square nostrils,,U3F1YXJlc1NxdWFyZSBub3N0cmlscw==
+Squares,Square nostrils,No mouth,U3F1YXJlc1NxdWFyZSBub3N0cmlsc05vIG1vdXRo
+Squares,Square nostrils,Mouth open,U3F1YXJlc1NxdWFyZSBub3N0cmlsc01vdXRoIG9wZW4=
+Squares,Square nostrils,Smiling,U3F1YXJlc1NxdWFyZSBub3N0cmlsc1NtaWxpbmc=
+Squares,Triangular nostrils,,U3F1YXJlc1RyaWFuZ3VsYXIgbm9zdHJpbHM=
+Squares,Triangular nostrils,No mouth,U3F1YXJlc1RyaWFuZ3VsYXIgbm9zdHJpbHNObyBtb3V0aA==
+Squares,Triangular nostrils,Mouth open,U3F1YXJlc1RyaWFuZ3VsYXIgbm9zdHJpbHNNb3V0aCBvcGVu
+Squares,Triangular nostrils,Smiling,U3F1YXJlc1RyaWFuZ3VsYXIgbm9zdHJpbHNTbWlsaW5n
+Squares,Rectangular nostrils,,U3F1YXJlc1JlY3Rhbmd1bGFyIG5vc3RyaWxz
+Squares,Rectangular nostrils,No mouth,U3F1YXJlc1JlY3Rhbmd1bGFyIG5vc3RyaWxzTm8gbW91dGg=
+Squares,Rectangular nostrils,Mouth open,U3F1YXJlc1JlY3Rhbmd1bGFyIG5vc3RyaWxzTW91dGggb3Blbg==
+Squares,Rectangular nostrils,Smiling,U3F1YXJlc1JlY3Rhbmd1bGFyIG5vc3RyaWxzU21pbGluZw==
+Squares,Smaller nostrils,,U3F1YXJlc1NtYWxsZXIgbm9zdHJpbHM=
+Squares,Smaller nostrils,No mouth,U3F1YXJlc1NtYWxsZXIgbm9zdHJpbHNObyBtb3V0aA==
+Squares,Smaller nostrils,Mouth open,U3F1YXJlc1NtYWxsZXIgbm9zdHJpbHNNb3V0aCBvcGVu
+Squares,Smaller nostrils,Smiling,U3F1YXJlc1NtYWxsZXIgbm9zdHJpbHNTbWlsaW5n
+Squares,Larger nostrils,,U3F1YXJlc0xhcmdlciBub3N0cmlscw==
+Squares,Larger nostrils,No mouth,U3F1YXJlc0xhcmdlciBub3N0cmlsc05vIG1vdXRo
+Squares,Larger nostrils,Mouth open,U3F1YXJlc0xhcmdlciBub3N0cmlsc01vdXRoIG9wZW4=
+Squares,Larger nostrils,Smiling,U3F1YXJlc0xhcmdlciBub3N0cmlsc1NtaWxpbmc=
+Triangles,,,VHJpYW5nbGVz
+Triangles,,No mouth,VHJpYW5nbGVzTm8gbW91dGg=
+Triangles,,Mouth open,VHJpYW5nbGVzTW91dGggb3Blbg==
+Triangles,,Smiling,VHJpYW5nbGVzU21pbGluZw==
+Triangles,No nose,,VHJpYW5nbGVzTm8gbm9zZQ==
+Triangles,No nose,No mouth,VHJpYW5nbGVzTm8gbm9zZU5vIG1vdXRo
+Triangles,No nose,Mouth open,VHJpYW5nbGVzTm8gbm9zZU1vdXRoIG9wZW4=
+Triangles,No nose,Smiling,VHJpYW5nbGVzTm8gbm9zZVNtaWxpbmc=
+Triangles,Square nostrils,,VHJpYW5nbGVzU3F1YXJlIG5vc3RyaWxz
+Triangles,Square nostrils,No mouth,VHJpYW5nbGVzU3F1YXJlIG5vc3RyaWxzTm8gbW91dGg=
+Triangles,Square nostrils,Mouth open,VHJpYW5nbGVzU3F1YXJlIG5vc3RyaWxzTW91dGggb3Blbg==
+Triangles,Square nostrils,Smiling,VHJpYW5nbGVzU3F1YXJlIG5vc3RyaWxzU21pbGluZw==
+Triangles,Triangular nostrils,,VHJpYW5nbGVzVHJpYW5ndWxhciBub3N0cmlscw==
+Triangles,Triangular nostrils,No mouth,VHJpYW5nbGVzVHJpYW5ndWxhciBub3N0cmlsc05vIG1vdXRo
+Triangles,Triangular nostrils,Mouth open,VHJpYW5nbGVzVHJpYW5ndWxhciBub3N0cmlsc01vdXRoIG9wZW4=
+Triangles,Triangular nostrils,Smiling,VHJpYW5nbGVzVHJpYW5ndWxhciBub3N0cmlsc1NtaWxpbmc=
+Triangles,Rectangular nostrils,,VHJpYW5nbGVzUmVjdGFuZ3VsYXIgbm9zdHJpbHM=
+Triangles,Rectangular nostrils,No mouth,VHJpYW5nbGVzUmVjdGFuZ3VsYXIgbm9zdHJpbHNObyBtb3V0aA==
+Triangles,Rectangular nostrils,Mouth open,VHJpYW5nbGVzUmVjdGFuZ3VsYXIgbm9zdHJpbHNNb3V0aCBvcGVu
+Triangles,Rectangular nostrils,Smiling,VHJpYW5nbGVzUmVjdGFuZ3VsYXIgbm9zdHJpbHNTbWlsaW5n
+Triangles,Smaller nostrils,,VHJpYW5nbGVzU21hbGxlciBub3N0cmlscw==
+Triangles,Smaller nostrils,No mouth,VHJpYW5nbGVzU21hbGxlciBub3N0cmlsc05vIG1vdXRo
+Triangles,Smaller nostrils,Mouth open,VHJpYW5nbGVzU21hbGxlciBub3N0cmlsc01vdXRoIG9wZW4=
+Triangles,Smaller nostrils,Smiling,VHJpYW5nbGVzU21hbGxlciBub3N0cmlsc1NtaWxpbmc=
+Triangles,Larger nostrils,,VHJpYW5nbGVzTGFyZ2VyIG5vc3RyaWxz
+Triangles,Larger nostrils,No mouth,VHJpYW5nbGVzTGFyZ2VyIG5vc3RyaWxzTm8gbW91dGg=
+Triangles,Larger nostrils,Mouth open,VHJpYW5nbGVzTGFyZ2VyIG5vc3RyaWxzTW91dGggb3Blbg==
+Triangles,Larger nostrils,Smiling,VHJpYW5nbGVzTGFyZ2VyIG5vc3RyaWxzU21pbGluZw==
+Rectangles,,,UmVjdGFuZ2xlcw==
+Rectangles,,No mouth,UmVjdGFuZ2xlc05vIG1vdXRo
+Rectangles,,Mouth open,UmVjdGFuZ2xlc01vdXRoIG9wZW4=
+Rectangles,,Smiling,UmVjdGFuZ2xlc1NtaWxpbmc=
+Rectangles,No nose,,UmVjdGFuZ2xlc05vIG5vc2U=
+Rectangles,No nose,No mouth,UmVjdGFuZ2xlc05vIG5vc2VObyBtb3V0aA==
+Rectangles,No nose,Mouth open,UmVjdGFuZ2xlc05vIG5vc2VNb3V0aCBvcGVu
+Rectangles,No nose,Smiling,UmVjdGFuZ2xlc05vIG5vc2VTbWlsaW5n
+Rectangles,Square nostrils,,UmVjdGFuZ2xlc1NxdWFyZSBub3N0cmlscw==
+Rectangles,Square nostrils,No mouth,UmVjdGFuZ2xlc1NxdWFyZSBub3N0cmlsc05vIG1vdXRo
+Rectangles,Square nostrils,Mouth open,UmVjdGFuZ2xlc1NxdWFyZSBub3N0cmlsc01vdXRoIG9wZW4=
+Rectangles,Square nostrils,Smiling,UmVjdGFuZ2xlc1NxdWFyZSBub3N0cmlsc1NtaWxpbmc=
+Rectangles,Triangular nostrils,,UmVjdGFuZ2xlc1RyaWFuZ3VsYXIgbm9zdHJpbHM=
+Rectangles,Triangular nostrils,No mouth,UmVjdGFuZ2xlc1RyaWFuZ3VsYXIgbm9zdHJpbHNObyBtb3V0aA==
+Rectangles,Triangular nostrils,Mouth open,UmVjdGFuZ2xlc1RyaWFuZ3VsYXIgbm9zdHJpbHNNb3V0aCBvcGVu
+Rectangles,Triangular nostrils,Smiling,UmVjdGFuZ2xlc1RyaWFuZ3VsYXIgbm9zdHJpbHNTbWlsaW5n
+Rectangles,Rectangular nostrils,,UmVjdGFuZ2xlc1JlY3Rhbmd1bGFyIG5vc3RyaWxz
+Rectangles,Rectangular nostrils,No mouth,UmVjdGFuZ2xlc1JlY3Rhbmd1bGFyIG5vc3RyaWxzTm8gbW91dGg=
+Rectangles,Rectangular nostrils,Mouth open,UmVjdGFuZ2xlc1JlY3Rhbmd1bGFyIG5vc3RyaWxzTW91dGggb3Blbg==
+Rectangles,Rectangular nostrils,Smiling,UmVjdGFuZ2xlc1JlY3Rhbmd1bGFyIG5vc3RyaWxzU21pbGluZw==
+Rectangles,Smaller nostrils,,UmVjdGFuZ2xlc1NtYWxsZXIgbm9zdHJpbHM=
+Rectangles,Smaller nostrils,No mouth,UmVjdGFuZ2xlc1NtYWxsZXIgbm9zdHJpbHNObyBtb3V0aA==
+Rectangles,Smaller nostrils,Mouth open,UmVjdGFuZ2xlc1NtYWxsZXIgbm9zdHJpbHNNb3V0aCBvcGVu
+Rectangles,Smaller nostrils,Smiling,UmVjdGFuZ2xlc1NtYWxsZXIgbm9zdHJpbHNTbWlsaW5n
+Rectangles,Larger nostrils,,UmVjdGFuZ2xlc0xhcmdlciBub3N0cmlscw==
+Rectangles,Larger nostrils,No mouth,UmVjdGFuZ2xlc0xhcmdlciBub3N0cmlsc05vIG1vdXRo
+Rectangles,Larger nostrils,Mouth open,UmVjdGFuZ2xlc0xhcmdlciBub3N0cmlsc01vdXRoIG9wZW4=
+Rectangles,Larger nostrils,Smiling,UmVjdGFuZ2xlc0xhcmdlciBub3N0cmlsc1NtaWxpbmc=
+No eyes,,,Tm8gZXllcw==
+No eyes,,No mouth,Tm8gZXllc05vIG1vdXRo
+No eyes,,Mouth open,Tm8gZXllc01vdXRoIG9wZW4=
+No eyes,,Smiling,Tm8gZXllc1NtaWxpbmc=
+No eyes,No nose,,Tm8gZXllc05vIG5vc2U=
+No eyes,No nose,No mouth,Tm8gZXllc05vIG5vc2VObyBtb3V0aA==
+No eyes,No nose,Mouth open,Tm8gZXllc05vIG5vc2VNb3V0aCBvcGVu
+No eyes,No nose,Smiling,Tm8gZXllc05vIG5vc2VTbWlsaW5n
+No eyes,Square nostrils,,Tm8gZXllc1NxdWFyZSBub3N0cmlscw==
+No eyes,Square nostrils,No mouth,Tm8gZXllc1NxdWFyZSBub3N0cmlsc05vIG1vdXRo
+No eyes,Square nostrils,Mouth open,Tm8gZXllc1NxdWFyZSBub3N0cmlsc01vdXRoIG9wZW4=
+No eyes,Square nostrils,Smiling,Tm8gZXllc1NxdWFyZSBub3N0cmlsc1NtaWxpbmc=
+No eyes,Triangular nostrils,,Tm8gZXllc1RyaWFuZ3VsYXIgbm9zdHJpbHM=
+No eyes,Triangular nostrils,No mouth,Tm8gZXllc1RyaWFuZ3VsYXIgbm9zdHJpbHNObyBtb3V0aA==
+No eyes,Triangular nostrils,Mouth open,Tm8gZXllc1RyaWFuZ3VsYXIgbm9zdHJpbHNNb3V0aCBvcGVu
+No eyes,Triangular nostrils,Smiling,Tm8gZXllc1RyaWFuZ3VsYXIgbm9zdHJpbHNTbWlsaW5n
+No eyes,Rectangular nostrils,,Tm8gZXllc1JlY3Rhbmd1bGFyIG5vc3RyaWxz
+No eyes,Rectangular nostrils,No mouth,Tm8gZXllc1JlY3Rhbmd1bGFyIG5vc3RyaWxzTm8gbW91dGg=
+No eyes,Rectangular nostrils,Mouth open,Tm8gZXllc1JlY3Rhbmd1bGFyIG5vc3RyaWxzTW91dGggb3Blbg==
+No eyes,Rectangular nostrils,Smiling,Tm8gZXllc1JlY3Rhbmd1bGFyIG5vc3RyaWxzU21pbGluZw==
+No eyes,Smaller nostrils,,Tm8gZXllc1NtYWxsZXIgbm9zdHJpbHM=
+No eyes,Smaller nostrils,No mouth,Tm8gZXllc1NtYWxsZXIgbm9zdHJpbHNObyBtb3V0aA==
+No eyes,Smaller nostrils,Mouth open,Tm8gZXllc1NtYWxsZXIgbm9zdHJpbHNNb3V0aCBvcGVu
+No eyes,Smaller nostrils,Smiling,Tm8gZXllc1NtYWxsZXIgbm9zdHJpbHNTbWlsaW5n
+No eyes,Larger nostrils,,Tm8gZXllc0xhcmdlciBub3N0cmlscw==
+No eyes,Larger nostrils,No mouth,Tm8gZXllc0xhcmdlciBub3N0cmlsc05vIG1vdXRo
+No eyes,Larger nostrils,Mouth open,Tm8gZXllc0xhcmdlciBub3N0cmlsc01vdXRoIG9wZW4=
+No eyes,Larger nostrils,Smiling,Tm8gZXllc0xhcmdlciBub3N0cmlsc1NtaWxpbmc=
+Closed eyes,,,Q2xvc2VkIGV5ZXM=
+Closed eyes,,No mouth,Q2xvc2VkIGV5ZXNObyBtb3V0aA==
+Closed eyes,,Mouth open,Q2xvc2VkIGV5ZXNNb3V0aCBvcGVu
+Closed eyes,,Smiling,Q2xvc2VkIGV5ZXNTbWlsaW5n
+Closed eyes,No nose,,Q2xvc2VkIGV5ZXNObyBub3Nl
+Closed eyes,No nose,No mouth,Q2xvc2VkIGV5ZXNObyBub3NlTm8gbW91dGg=
+Closed eyes,No nose,Mouth open,Q2xvc2VkIGV5ZXNObyBub3NlTW91dGggb3Blbg==
+Closed eyes,No nose,Smiling,Q2xvc2VkIGV5ZXNObyBub3NlU21pbGluZw==
+Closed eyes,Square nostrils,,Q2xvc2VkIGV5ZXNTcXVhcmUgbm9zdHJpbHM=
+Closed eyes,Square nostrils,No mouth,Q2xvc2VkIGV5ZXNTcXVhcmUgbm9zdHJpbHNObyBtb3V0aA==
+Closed eyes,Square nostrils,Mouth open,Q2xvc2VkIGV5ZXNTcXVhcmUgbm9zdHJpbHNNb3V0aCBvcGVu
+Closed eyes,Square nostrils,Smiling,Q2xvc2VkIGV5ZXNTcXVhcmUgbm9zdHJpbHNTbWlsaW5n
+Closed eyes,Triangular nostrils,,Q2xvc2VkIGV5ZXNUcmlhbmd1bGFyIG5vc3RyaWxz
+Closed eyes,Triangular nostrils,No mouth,Q2xvc2VkIGV5ZXNUcmlhbmd1bGFyIG5vc3RyaWxzTm8gbW91dGg=
+Closed eyes,Triangular nostrils,Mouth open,Q2xvc2VkIGV5ZXNUcmlhbmd1bGFyIG5vc3RyaWxzTW91dGggb3Blbg==
+Closed eyes,Triangular nostrils,Smiling,Q2xvc2VkIGV5ZXNUcmlhbmd1bGFyIG5vc3RyaWxzU21pbGluZw==
+Closed eyes,Rectangular nostrils,,Q2xvc2VkIGV5ZXNSZWN0YW5ndWxhciBub3N0cmlscw==
+Closed eyes,Rectangular nostrils,No mouth,Q2xvc2VkIGV5ZXNSZWN0YW5ndWxhciBub3N0cmlsc05vIG1vdXRo
+Closed eyes,Rectangular nostrils,Mouth open,Q2xvc2VkIGV5ZXNSZWN0YW5ndWxhciBub3N0cmlsc01vdXRoIG9wZW4=
+Closed eyes,Rectangular nostrils,Smiling,Q2xvc2VkIGV5ZXNSZWN0YW5ndWxhciBub3N0cmlsc1NtaWxpbmc=
+Closed eyes,Smaller nostrils,,Q2xvc2VkIGV5ZXNTbWFsbGVyIG5vc3RyaWxz
+Closed eyes,Smaller nostrils,No mouth,Q2xvc2VkIGV5ZXNTbWFsbGVyIG5vc3RyaWxzTm8gbW91dGg=
+Closed eyes,Smaller nostrils,Mouth open,Q2xvc2VkIGV5ZXNTbWFsbGVyIG5vc3RyaWxzTW91dGggb3Blbg==
+Closed eyes,Smaller nostrils,Smiling,Q2xvc2VkIGV5ZXNTbWFsbGVyIG5vc3RyaWxzU21pbGluZw==
+Closed eyes,Larger nostrils,,Q2xvc2VkIGV5ZXNMYXJnZXIgbm9zdHJpbHM=
+Closed eyes,Larger nostrils,No mouth,Q2xvc2VkIGV5ZXNMYXJnZXIgbm9zdHJpbHNObyBtb3V0aA==
+Closed eyes,Larger nostrils,Mouth open,Q2xvc2VkIGV5ZXNMYXJnZXIgbm9zdHJpbHNNb3V0aCBvcGVu
+Closed eyes,Larger nostrils,Smiling,Q2xvc2VkIGV5ZXNMYXJnZXIgbm9zdHJpbHNTbWlsaW5n
+Eyes looking left,,,RXllcyBsb29raW5nIGxlZnQ=
+Eyes looking left,,No mouth,RXllcyBsb29raW5nIGxlZnRObyBtb3V0aA==
+Eyes looking left,,Mouth open,RXllcyBsb29raW5nIGxlZnRNb3V0aCBvcGVu
+Eyes looking left,,Smiling,RXllcyBsb29raW5nIGxlZnRTbWlsaW5n
+Eyes looking left,No nose,,RXllcyBsb29raW5nIGxlZnRObyBub3Nl
+Eyes looking left,No nose,No mouth,RXllcyBsb29raW5nIGxlZnRObyBub3NlTm8gbW91dGg=
+Eyes looking left,No nose,Mouth open,RXllcyBsb29raW5nIGxlZnRObyBub3NlTW91dGggb3Blbg==
+Eyes looking left,No nose,Smiling,RXllcyBsb29raW5nIGxlZnRObyBub3NlU21pbGluZw==
+Eyes looking left,Square nostrils,,RXllcyBsb29raW5nIGxlZnRTcXVhcmUgbm9zdHJpbHM=
+Eyes looking left,Square nostrils,No mouth,RXllcyBsb29raW5nIGxlZnRTcXVhcmUgbm9zdHJpbHNObyBtb3V0aA==
+Eyes looking left,Square nostrils,Mouth open,RXllcyBsb29raW5nIGxlZnRTcXVhcmUgbm9zdHJpbHNNb3V0aCBvcGVu
+Eyes looking left,Square nostrils,Smiling,RXllcyBsb29raW5nIGxlZnRTcXVhcmUgbm9zdHJpbHNTbWlsaW5n
+Eyes looking left,Triangular nostrils,,RXllcyBsb29raW5nIGxlZnRUcmlhbmd1bGFyIG5vc3RyaWxz
+Eyes looking left,Triangular nostrils,No mouth,RXllcyBsb29raW5nIGxlZnRUcmlhbmd1bGFyIG5vc3RyaWxzTm8gbW91dGg=
+Eyes looking left,Triangular nostrils,Mouth open,RXllcyBsb29raW5nIGxlZnRUcmlhbmd1bGFyIG5vc3RyaWxzTW91dGggb3Blbg==
+Eyes looking left,Triangular nostrils,Smiling,RXllcyBsb29raW5nIGxlZnRUcmlhbmd1bGFyIG5vc3RyaWxzU21pbGluZw==
+Eyes looking left,Rectangular nostrils,,RXllcyBsb29raW5nIGxlZnRSZWN0YW5ndWxhciBub3N0cmlscw==
+Eyes looking left,Rectangular nostrils,No mouth,RXllcyBsb29raW5nIGxlZnRSZWN0YW5ndWxhciBub3N0cmlsc05vIG1vdXRo
+Eyes looking left,Rectangular nostrils,Mouth open,RXllcyBsb29raW5nIGxlZnRSZWN0YW5ndWxhciBub3N0cmlsc01vdXRoIG9wZW4=
+Eyes looking left,Rectangular nostrils,Smiling,RXllcyBsb29raW5nIGxlZnRSZWN0YW5ndWxhciBub3N0cmlsc1NtaWxpbmc=
+Eyes looking left,Smaller nostrils,,RXllcyBsb29raW5nIGxlZnRTbWFsbGVyIG5vc3RyaWxz
+Eyes looking left,Smaller nostrils,No mouth,RXllcyBsb29raW5nIGxlZnRTbWFsbGVyIG5vc3RyaWxzTm8gbW91dGg=
+Eyes looking left,Smaller nostrils,Mouth open,RXllcyBsb29raW5nIGxlZnRTbWFsbGVyIG5vc3RyaWxzTW91dGggb3Blbg==
+Eyes looking left,Smaller nostrils,Smiling,RXllcyBsb29raW5nIGxlZnRTbWFsbGVyIG5vc3RyaWxzU21pbGluZw==
+Eyes looking left,Larger nostrils,,RXllcyBsb29raW5nIGxlZnRMYXJnZXIgbm9zdHJpbHM=
+Eyes looking left,Larger nostrils,No mouth,RXllcyBsb29raW5nIGxlZnRMYXJnZXIgbm9zdHJpbHNObyBtb3V0aA==
+Eyes looking left,Larger nostrils,Mouth open,RXllcyBsb29raW5nIGxlZnRMYXJnZXIgbm9zdHJpbHNNb3V0aCBvcGVu
+Eyes looking left,Larger nostrils,Smiling,RXllcyBsb29raW5nIGxlZnRMYXJnZXIgbm9zdHJpbHNTbWlsaW5n
+Eyes looking right,,,RXllcyBsb29raW5nIHJpZ2h0
+Eyes looking right,,No mouth,RXllcyBsb29raW5nIHJpZ2h0Tm8gbW91dGg=
+Eyes looking right,,Mouth open,RXllcyBsb29raW5nIHJpZ2h0TW91dGggb3Blbg==
+Eyes looking right,,Smiling,RXllcyBsb29raW5nIHJpZ2h0U21pbGluZw==
+Eyes looking right,No nose,,RXllcyBsb29raW5nIHJpZ2h0Tm8gbm9zZQ==
+Eyes looking right,No nose,No mouth,RXllcyBsb29raW5nIHJpZ2h0Tm8gbm9zZU5vIG1vdXRo
+Eyes looking right,No nose,Mouth open,RXllcyBsb29raW5nIHJpZ2h0Tm8gbm9zZU1vdXRoIG9wZW4=
+Eyes looking right,No nose,Smiling,RXllcyBsb29raW5nIHJpZ2h0Tm8gbm9zZVNtaWxpbmc=
+Eyes looking right,Square nostrils,,RXllcyBsb29raW5nIHJpZ2h0U3F1YXJlIG5vc3RyaWxz
+Eyes looking right,Square nostrils,No mouth,RXllcyBsb29raW5nIHJpZ2h0U3F1YXJlIG5vc3RyaWxzTm8gbW91dGg=
+Eyes looking right,Square nostrils,Mouth open,RXllcyBsb29raW5nIHJpZ2h0U3F1YXJlIG5vc3RyaWxzTW91dGggb3Blbg==
+Eyes looking right,Square nostrils,Smiling,RXllcyBsb29raW5nIHJpZ2h0U3F1YXJlIG5vc3RyaWxzU21pbGluZw==
+Eyes looking right,Triangular nostrils,,RXllcyBsb29raW5nIHJpZ2h0VHJpYW5ndWxhciBub3N0cmlscw==
+Eyes looking right,Triangular nostrils,No mouth,RXllcyBsb29raW5nIHJpZ2h0VHJpYW5ndWxhciBub3N0cmlsc05vIG1vdXRo
+Eyes looking right,Triangular nostrils,Mouth open,RXllcyBsb29raW5nIHJpZ2h0VHJpYW5ndWxhciBub3N0cmlsc01vdXRoIG9wZW4=
+Eyes looking right,Triangular nostrils,Smiling,RXllcyBsb29raW5nIHJpZ2h0VHJpYW5ndWxhciBub3N0cmlsc1NtaWxpbmc=
+Eyes looking right,Rectangular nostrils,,RXllcyBsb29raW5nIHJpZ2h0UmVjdGFuZ3VsYXIgbm9zdHJpbHM=
+Eyes looking right,Rectangular nostrils,No mouth,RXllcyBsb29raW5nIHJpZ2h0UmVjdGFuZ3VsYXIgbm9zdHJpbHNObyBtb3V0aA==
+Eyes looking right,Rectangular nostrils,Mouth open,RXllcyBsb29raW5nIHJpZ2h0UmVjdGFuZ3VsYXIgbm9zdHJpbHNNb3V0aCBvcGVu
+Eyes looking right,Rectangular nostrils,Smiling,RXllcyBsb29raW5nIHJpZ2h0UmVjdGFuZ3VsYXIgbm9zdHJpbHNTbWlsaW5n
+Eyes looking right,Smaller nostrils,,RXllcyBsb29raW5nIHJpZ2h0U21hbGxlciBub3N0cmlscw==
+Eyes looking right,Smaller nostrils,No mouth,RXllcyBsb29raW5nIHJpZ2h0U21hbGxlciBub3N0cmlsc05vIG1vdXRo
+Eyes looking right,Smaller nostrils,Mouth open,RXllcyBsb29raW5nIHJpZ2h0U21hbGxlciBub3N0cmlsc01vdXRoIG9wZW4=
+Eyes looking right,Smaller nostrils,Smiling,RXllcyBsb29raW5nIHJpZ2h0U21hbGxlciBub3N0cmlsc1NtaWxpbmc=
+Eyes looking right,Larger nostrils,,RXllcyBsb29raW5nIHJpZ2h0TGFyZ2VyIG5vc3RyaWxz
+Eyes looking right,Larger nostrils,No mouth,RXllcyBsb29raW5nIHJpZ2h0TGFyZ2VyIG5vc3RyaWxzTm8gbW91dGg=
+Eyes looking right,Larger nostrils,Mouth open,RXllcyBsb29raW5nIHJpZ2h0TGFyZ2VyIG5vc3RyaWxzTW91dGggb3Blbg==
+Eyes looking right,Larger nostrils,Smiling,RXllcyBsb29raW5nIHJpZ2h0TGFyZ2VyIG5vc3RyaWxzU21pbGluZw==
+Eyes looking up,,,RXllcyBsb29raW5nIHVw
+Eyes looking up,,No mouth,RXllcyBsb29raW5nIHVwTm8gbW91dGg=
+Eyes looking up,,Mouth open,RXllcyBsb29raW5nIHVwTW91dGggb3Blbg==
+Eyes looking up,,Smiling,RXllcyBsb29raW5nIHVwU21pbGluZw==
+Eyes looking up,No nose,,RXllcyBsb29raW5nIHVwTm8gbm9zZQ==
+Eyes looking up,No nose,No mouth,RXllcyBsb29raW5nIHVwTm8gbm9zZU5vIG1vdXRo
+Eyes looking up,No nose,Mouth open,RXllcyBsb29raW5nIHVwTm8gbm9zZU1vdXRoIG9wZW4=
+Eyes looking up,No nose,Smiling,RXllcyBsb29raW5nIHVwTm8gbm9zZVNtaWxpbmc=
+Eyes looking up,Square nostrils,,RXllcyBsb29raW5nIHVwU3F1YXJlIG5vc3RyaWxz
+Eyes looking up,Square nostrils,No mouth,RXllcyBsb29raW5nIHVwU3F1YXJlIG5vc3RyaWxzTm8gbW91dGg=
+Eyes looking up,Square nostrils,Mouth open,RXllcyBsb29raW5nIHVwU3F1YXJlIG5vc3RyaWxzTW91dGggb3Blbg==
+Eyes looking up,Square nostrils,Smiling,RXllcyBsb29raW5nIHVwU3F1YXJlIG5vc3RyaWxzU21pbGluZw==
+Eyes looking up,Triangular nostrils,,RXllcyBsb29raW5nIHVwVHJpYW5ndWxhciBub3N0cmlscw==
+Eyes looking up,Triangular nostrils,No mouth,RXllcyBsb29raW5nIHVwVHJpYW5ndWxhciBub3N0cmlsc05vIG1vdXRo
+Eyes looking up,Triangular nostrils,Mouth open,RXllcyBsb29raW5nIHVwVHJpYW5ndWxhciBub3N0cmlsc01vdXRoIG9wZW4=
+Eyes looking up,Triangular nostrils,Smiling,RXllcyBsb29raW5nIHVwVHJpYW5ndWxhciBub3N0cmlsc1NtaWxpbmc=
+Eyes looking up,Rectangular nostrils,,RXllcyBsb29raW5nIHVwUmVjdGFuZ3VsYXIgbm9zdHJpbHM=
+Eyes looking up,Rectangular nostrils,No mouth,RXllcyBsb29raW5nIHVwUmVjdGFuZ3VsYXIgbm9zdHJpbHNObyBtb3V0aA==
+Eyes looking up,Rectangular nostrils,Mouth open,RXllcyBsb29raW5nIHVwUmVjdGFuZ3VsYXIgbm9zdHJpbHNNb3V0aCBvcGVu
+Eyes looking up,Rectangular nostrils,Smiling,RXllcyBsb29raW5nIHVwUmVjdGFuZ3VsYXIgbm9zdHJpbHNTbWlsaW5n
+Eyes looking up,Smaller nostrils,,RXllcyBsb29raW5nIHVwU21hbGxlciBub3N0cmlscw==
+Eyes looking up,Smaller nostrils,No mouth,RXllcyBsb29raW5nIHVwU21hbGxlciBub3N0cmlsc05vIG1vdXRo
+Eyes looking up,Smaller nostrils,Mouth open,RXllcyBsb29raW5nIHVwU21hbGxlciBub3N0cmlsc01vdXRoIG9wZW4=
+Eyes looking up,Smaller nostrils,Smiling,RXllcyBsb29raW5nIHVwU21hbGxlciBub3N0cmlsc1NtaWxpbmc=
+Eyes looking up,Larger nostrils,,RXllcyBsb29raW5nIHVwTGFyZ2VyIG5vc3RyaWxz
+Eyes looking up,Larger nostrils,No mouth,RXllcyBsb29raW5nIHVwTGFyZ2VyIG5vc3RyaWxzTm8gbW91dGg=
+Eyes looking up,Larger nostrils,Mouth open,RXllcyBsb29raW5nIHVwTGFyZ2VyIG5vc3RyaWxzTW91dGggb3Blbg==
+Eyes looking up,Larger nostrils,Smiling,RXllcyBsb29raW5nIHVwTGFyZ2VyIG5vc3RyaWxzU21pbGluZw==
+Eyes looking down,,,RXllcyBsb29raW5nIGRvd24=
+Eyes looking down,,No mouth,RXllcyBsb29raW5nIGRvd25ObyBtb3V0aA==
+Eyes looking down,,Mouth open,RXllcyBsb29raW5nIGRvd25Nb3V0aCBvcGVu
+Eyes looking down,,Smiling,RXllcyBsb29raW5nIGRvd25TbWlsaW5n
+Eyes looking down,No nose,,RXllcyBsb29raW5nIGRvd25ObyBub3Nl
+Eyes looking down,No nose,No mouth,RXllcyBsb29raW5nIGRvd25ObyBub3NlTm8gbW91dGg=
+Eyes looking down,No nose,Mouth open,RXllcyBsb29raW5nIGRvd25ObyBub3NlTW91dGggb3Blbg==
+Eyes looking down,No nose,Smiling,RXllcyBsb29raW5nIGRvd25ObyBub3NlU21pbGluZw==
+Eyes looking down,Square nostrils,,RXllcyBsb29raW5nIGRvd25TcXVhcmUgbm9zdHJpbHM=
+Eyes looking down,Square nostrils,No mouth,RXllcyBsb29raW5nIGRvd25TcXVhcmUgbm9zdHJpbHNObyBtb3V0aA==
+Eyes looking down,Square nostrils,Mouth open,RXllcyBsb29raW5nIGRvd25TcXVhcmUgbm9zdHJpbHNNb3V0aCBvcGVu
+Eyes looking down,Square nostrils,Smiling,RXllcyBsb29raW5nIGRvd25TcXVhcmUgbm9zdHJpbHNTbWlsaW5n
+Eyes looking down,Triangular nostrils,,RXllcyBsb29raW5nIGRvd25Ucmlhbmd1bGFyIG5vc3RyaWxz
+Eyes looking down,Triangular nostrils,No mouth,RXllcyBsb29raW5nIGRvd25Ucmlhbmd1bGFyIG5vc3RyaWxzTm8gbW91dGg=
+Eyes looking down,Triangular nostrils,Mouth open,RXllcyBsb29raW5nIGRvd25Ucmlhbmd1bGFyIG5vc3RyaWxzTW91dGggb3Blbg==
+Eyes looking down,Triangular nostrils,Smiling,RXllcyBsb29raW5nIGRvd25Ucmlhbmd1bGFyIG5vc3RyaWxzU21pbGluZw==
+Eyes looking down,Rectangular nostrils,,RXllcyBsb29raW5nIGRvd25SZWN0YW5ndWxhciBub3N0cmlscw==
+Eyes looking down,Rectangular nostrils,No mouth,RXllcyBsb29raW5nIGRvd25SZWN0YW5ndWxhciBub3N0cmlsc05vIG1vdXRo
+Eyes looking down,Rectangular nostrils,Mouth open,RXllcyBsb29raW5nIGRvd25SZWN0YW5ndWxhciBub3N0cmlsc01vdXRoIG9wZW4=
+Eyes looking down,Rectangular nostrils,Smiling,RXllcyBsb29raW5nIGRvd25SZWN0YW5ndWxhciBub3N0cmlsc1NtaWxpbmc=
+Eyes looking down,Smaller nostrils,,RXllcyBsb29raW5nIGRvd25TbWFsbGVyIG5vc3RyaWxz
+Eyes looking down,Smaller nostrils,No mouth,RXllcyBsb29raW5nIGRvd25TbWFsbGVyIG5vc3RyaWxzTm8gbW91dGg=
+Eyes looking down,Smaller nostrils,Mouth open,RXllcyBsb29raW5nIGRvd25TbWFsbGVyIG5vc3RyaWxzTW91dGggb3Blbg==
+Eyes looking down,Smaller nostrils,Smiling,RXllcyBsb29raW5nIGRvd25TbWFsbGVyIG5vc3RyaWxzU21pbGluZw==
+Eyes looking down,Larger nostrils,,RXllcyBsb29raW5nIGRvd25MYXJnZXIgbm9zdHJpbHM=
+Eyes looking down,Larger nostrils,No mouth,RXllcyBsb29raW5nIGRvd25MYXJnZXIgbm9zdHJpbHNObyBtb3V0aA==
+Eyes looking down,Larger nostrils,Mouth open,RXllcyBsb29raW5nIGRvd25MYXJnZXIgbm9zdHJpbHNNb3V0aCBvcGVu
+Eyes looking down,Larger nostrils,Smiling,RXllcyBsb29raW5nIGRvd25MYXJnZXIgbm9zdHJpbHNTbWlsaW5n

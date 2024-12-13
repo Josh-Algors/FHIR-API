@@ -3,6 +3,7 @@ const { Preference } = require("../models/preference");
 const { Image } = require("../models/images");
 const { Log } = require("../models/log");
 const { Template } = require("../models/template");
+const { Cropped } = require("../models/cropped");
 
 
 
@@ -149,6 +150,78 @@ const checkSlider = async (data) => {
      return info;
  };
  
+ const addCroppedImages = async (data) => {
+
+    const info = await Cropped.create({
+         template_id: data.template_id,
+         eyes: data.eyes,
+         nose: data.nose,
+         mouth: data.mouth,
+         base_64: ""
+     });
+ 
+     return info;
+ };
+
+ const getEyes = async (template_id, eyes) => {
+
+    const info = await Cropped.findOne({
+         template_id: template_id,
+         eyes: eyes
+     });
+
+    if(!info)
+    {
+        const info = await Cropped.findOne({
+            template_id: template_id,
+            eyes: "base-image"
+        });
+
+        return info;
+    }
+ 
+     return info;
+ };
+
+ const getNose = async (template_id, nose) => {
+
+    const info = await Cropped.findOne({
+         template_id: template_id,
+         nose: nose,
+     });
+
+    if(!info)
+    {
+        const info = await Cropped.findOne({
+            template_id: template_id,
+            nose: "base-image"
+        });
+
+        return info;
+    }
+ 
+     return info;
+ };
+
+ const getMouth = async (template_id, mouth) => {
+
+    const info = await Cropped.findOne({
+         template_id: template_id,
+         mouth: mouth
+     });
+
+    if(!info)
+    {
+        const info = await Cropped.findOne({
+            template_id: template_id,
+            mouth: "base-image"
+        });
+
+        return info;
+    }
+ 
+     return info;
+ };
 
 module.exports = {
     logFeedback,
@@ -163,5 +236,9 @@ module.exports = {
     allTemplates,
     favorites,
     getSlider,
-    checkTemplateById
+    checkTemplateById,
+    addCroppedImages,
+    getEyes,
+    getNose,
+    getMouth
 }
