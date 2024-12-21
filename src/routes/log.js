@@ -17,4 +17,8 @@ router.get('/templates', LogController.allTemplates);
 router.get('/favorites', [jwtMiddleWare], LogController.allFavorites);
 router.post('/add-crop', LogController.addCrop);
 
+router.get('/collections', LogController.allCollections);
+
+
+
 module.exports = router;

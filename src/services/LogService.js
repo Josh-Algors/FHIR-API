@@ -585,6 +585,20 @@ const addCrop = async (req, res, next) => {
 
 };
 
+//allCollections
+const allCollections = async (req, res, next) => {
+
+  if(!req.query.colname)
+  {
+    return helpers.newError("Invalid collection name!", 400);
+  }
+
+  const info = await logRepository.allCollections(req.query.colname);
+
+  return info;
+
+};
+
 module.exports = {
   createImage,
   getInfos,
@@ -593,5 +607,6 @@ module.exports = {
   addTemplate,
   allTemplates,
   allFavorites,
-  addCrop
+  addCrop,
+  allCollections
 };

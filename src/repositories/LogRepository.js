@@ -1,3 +1,6 @@
+const mongoose = require('mongoose');
+const dbs = mongoose.connection.db;
+
 const { Feedback } = require("../models/feedback");
 const { Preference } = require("../models/preference");
 const { Image } = require("../models/images");
@@ -223,6 +226,20 @@ const checkSlider = async (data) => {
      return info;
  };
 
+ const allCollections = async (col_name) => {
+
+    const collections = await mongoose.connection.db.listCollections().toArray();
+
+    // return collections;
+
+    for (col of collections)
+    {
+        const docs = await mongoose.connection.db.collection(col_name).find({}).toArray();
+
+        return docs;
+    }
+
+ };
 module.exports = {
     logFeedback,
     logFavorite,
@@ -240,5 +257,6 @@ module.exports = {
     addCroppedImages,
     getEyes,
     getNose,
-    getMouth
+    getMouth,
+    allCollections
 }
