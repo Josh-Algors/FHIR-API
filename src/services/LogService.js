@@ -668,7 +668,7 @@ const favoriteLogs = async (req, res, next) => {
         mouth: inf.slider_id.mouth,
         human_or_robot: inf.slider_id.human_or_robot,
         rating: inf.rating,
-        createdAt: inf.slider_id.createdAt
+        createdAt: inf.createdAt
       };
 
       users.push(inf.user_id.email);
