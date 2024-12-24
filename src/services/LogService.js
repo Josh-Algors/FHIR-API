@@ -633,7 +633,7 @@ const interactionLogs = async (req, res, next) => {
         nose: inf.slider_id.nose,
         mouth: inf.slider_id.mouth,
         human_or_robot: inf.slider_id.human_or_robot,
-        createdAt: inf.slider_id.createdAt
+        createdAt: inf.createdAt
       };
 
       otherInf.push(data);
@@ -684,7 +684,7 @@ const favoriteLogs = async (req, res, next) => {
         mouth: inf.slider_id.mouth,
         human_or_robot: inf.slider_id.human_or_robot,
         rating: inf.rating,
-        createdAt: inf.slider_id.createdAt
+        createdAt: inf.createdAt
       };
 
       otherInf.push(data);
