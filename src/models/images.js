@@ -17,6 +17,14 @@ const imageSchema = new mongoose.Schema({
     timestamps: true
 });
 
+
+imageSchema.virtual('Templates', {
+    ref: 'Templates',
+    localField: '_id',
+    foreignField: 'template_id',
+    justOne: true
+});
+
 const Image = mongoose.model('Images', imageSchema);
 
 module.exports = { Image };

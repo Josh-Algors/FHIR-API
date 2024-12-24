@@ -276,6 +276,25 @@ const imageConfig = (type) => {
     }
 }
 
+const calculateTimeSpent = (interactions) => {
+
+    interactions.forEach((interaction, index) => {
+        if (index < interactions.length - 1) {
+            const startTime = new Date(interaction.createdAt);
+            const endTime = new Date(interactions[index + 1].createdAt);
+            const duration = (endTime - startTime) / 1000; // Duration in seconds
+            interaction.time_spent = `${duration} seconds`;
+            console.log(`Time spent on slider by ${interaction.user} for template ${interaction.template_id}: ${duration} seconds`);
+        } else {
+            // Optionally handle the last interaction differently since we cannot calculate its duration
+            interaction.time_spent = `${0} seconds`; // Indicate undefined duration
+        }
+    });
+
+    return interactions;
+
+};
+
 
 module.exports = {
     sendError,
@@ -285,5 +304,6 @@ module.exports = {
     signToken,
     isValidBase64Image,
     convertImageToBase64,
-    imageConfig
+    imageConfig,
+    calculateTimeSpent
 }

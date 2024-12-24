@@ -599,6 +599,102 @@ const allCollections = async (req, res, next) => {
 
 };
 
+const interactionLogs = async (req, res, next) => {
+
+  const info = await logRepository.allLogs();
+  var users = [];
+  var otherInf = [];
+
+  for (inf of info)
+  {
+    const checkTemplate = await logRepository.findTemplate(inf.slider_id.template_id);
+
+    if(!users.includes(inf.user_id.email))
+    {
+      const data = {
+        user: inf.user_id.email,
+        template_id: checkTemplate.type,
+        eyes: inf.slider_id.eyes,
+        nose: inf.slider_id.nose,
+        mouth: inf.slider_id.mouth,
+        human_or_robot: inf.slider_id.human_or_robot,
+        createdAt: inf.slider_id.createdAt
+      };
+
+      users.push(inf.user_id.email);
+      otherInf.push(data);
+    }
+    else
+    {
+      const data = {
+        user: inf.user_id.email,
+        template_id: checkTemplate.type,
+        eyes: inf.slider_id.eyes,
+        nose: inf.slider_id.nose,
+        mouth: inf.slider_id.mouth,
+        human_or_robot: inf.slider_id.human_or_robot,
+        createdAt: inf.slider_id.createdAt
+      };
+
+      otherInf.push(data);
+    }
+  }
+
+  helpers.calculateTimeSpent(otherInf);
+
+
+  return otherInf;
+
+};
+
+const favoriteLogs = async (req, res, next) => {
+
+  const info = await logRepository.preferenceLogs();
+
+  var users = [];
+  var otherInf = [];
+
+  for (inf of info)
+  {
+    const checkTemplate = await logRepository.findTemplate(inf.slider_id.template_id);
+
+    if(!users.includes(inf.user_id.email))
+    {
+      const data = {
+        user: inf.user_id.email,
+        template_id: checkTemplate.type,
+        eyes: inf.slider_id.eyes,
+        nose: inf.slider_id.nose,
+        mouth: inf.slider_id.mouth,
+        human_or_robot: inf.slider_id.human_or_robot,
+        rating: inf.rating,
+        createdAt: inf.slider_id.createdAt
+      };
+
+      users.push(inf.user_id.email);
+      otherInf.push(data);
+    }
+    else
+    {
+      const data = {
+        user: inf.user_id.email,
+        template_id: checkTemplate.type,
+        eyes: inf.slider_id.eyes,
+        nose: inf.slider_id.nose,
+        mouth: inf.slider_id.mouth,
+        human_or_robot: inf.slider_id.human_or_robot,
+        rating: inf.rating,
+        createdAt: inf.slider_id.createdAt
+      };
+
+      otherInf.push(data);
+    }
+  }
+
+  return otherInf;
+
+};
+
 module.exports = {
   createImage,
   getInfos,
@@ -608,5 +704,7 @@ module.exports = {
   allTemplates,
   allFavorites,
   addCrop,
-  allCollections
+  allCollections,
+  interactionLogs,
+  favoriteLogs
 };

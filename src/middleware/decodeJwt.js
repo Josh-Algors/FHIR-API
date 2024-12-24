@@ -1,6 +1,7 @@
 const jwt_decode = require('jwt-decode');
 const Joi = require('joi');
 const helpers = require('../config/helpers');
+require('dotenv').config();
 
 const schema = Joi.object().keys({
     data: Joi.string().min(5).required()
@@ -34,4 +35,17 @@ const decodeMiddleware = (req,res,next) =>{
 
 }
 
-module.exports = {decodeMiddleware};
+function authMiddleware(req, res, next) {
+    const { username, password } = req.headers;
+
+    const validUsername = process.env.AU;
+    const validPassword = process.env.AP;
+  
+    if (username === validUsername && password === validPassword) {
+      next(); // Proceed to the next
+    } else {
+      res.status(401).json({ message: 'Authentication failed' });
+    }
+  }
+
+module.exports = {decodeMiddleware, authMiddleware};

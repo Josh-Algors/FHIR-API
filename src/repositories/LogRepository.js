@@ -240,6 +240,38 @@ const checkSlider = async (data) => {
     }
 
  };
+
+ const allLogs = async () => {
+
+    const info = await Log.find().populate('user_id')
+                    .populate({path: 'slider_id', select: '-base_64'});
+
+    return info;
+ }
+
+//  findTemplate
+
+const findTemplate = async (template_id) => {
+
+    const info = await Template.findOne({
+        _id: template_id
+    });
+
+    return info;
+ }
+
+ //preferenceLogs
+ const preferenceLogs = async () => {
+
+    const info = await Preference.find().populate('user_id').populate({
+        path: 'slider_id',
+        select: ['-base_64']
+    });
+
+    return info;
+ }
+
+
 module.exports = {
     logFeedback,
     logFavorite,
@@ -258,5 +290,8 @@ module.exports = {
     getEyes,
     getNose,
     getMouth,
-    allCollections
+    allCollections,
+    allLogs,
+    findTemplate,
+    preferenceLogs
 }
