@@ -23,6 +23,7 @@ const decodeMiddleware = (req,res,next) =>{
     try
     {
         var decoded = jwt_decode(token);
+        console.log(decoded);
         req.body = decoded;
         next()
     }
