@@ -44,7 +44,7 @@ const getPercentage = (numerator, denominator) => {
 const signToken = (user) => {
 
     var token = jwt.sign({
-      id: user.id,
+      id: user._id,
       email: user.email
     },
       process.env.SECRET,
