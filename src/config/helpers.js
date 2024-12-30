@@ -42,9 +42,9 @@ const getPercentage = (numerator, denominator) => {
 }
 
 const signToken = (user) => {
-console.log(user);
+console.log(user._id);
     var token = jwt.sign({
-      user_id: user._id,
+      _id: user._id,
       email: user.email
     },
       process.env.SECRET,
@@ -55,6 +55,7 @@ console.log(user);
   
     var decoded = jwt_decode(token);
     Oauth.create(decoded);
+    console.log("Oauth ===== ", decoded);
     return token;
 };
 

@@ -389,7 +389,7 @@ const cropMouth = async (faceType, layerImage, x, y) => {
 
 
 const getInfos = async (req, res, next) => {
-
+console.log(req.user);
   const data = {
     human: {
       eyes: ['Eyes closed', 'Eyes without the sclera (all black)', 'Eyes without the iris and pupil (completely white)',
@@ -409,7 +409,7 @@ const getInfos = async (req, res, next) => {
     }
   }
 
-  return data;
+  return data; 
 };
 
 //feedback

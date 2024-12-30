@@ -6,16 +6,17 @@ require('../config/passport');
 
 var jwtMiddleWare = passport.authenticate('jwt', {session: false});
 const logMiddleware = require('../middleware/decodeJwt').authMiddleware;
+const verifyToken = require('../middleware/decodeJwt').verifyToken;
 
 
 //logs
-router.post('/generate', [jwtMiddleWare], LogController.createEvent);
-router.post('/feedback/:slider_id', [jwtMiddleWare], LogController.feedback);
-router.post('/favorite/:slider_id', [jwtMiddleWare], LogController.setFavorite);
-router.get('/list', [jwtMiddleWare], LogController.getInfos);
+router.post('/generate', [jwtMiddleWare, verifyToken], LogController.createEvent);
+router.post('/feedback/:slider_id', [jwtMiddleWare, verifyToken], LogController.feedback);
+router.post('/favorite/:slider_id', [jwtMiddleWare, verifyToken], LogController.setFavorite);
+router.get('/list', [jwtMiddleWare, verifyToken], LogController.getInfos);
 router.post('/templates/add', LogController.addTemplate);
 router.get('/templates', LogController.allTemplates);
-router.get('/favorites', [jwtMiddleWare], LogController.allFavorites);
+router.get('/favorites', [jwtMiddleWare, verifyToken], LogController.allFavorites);
 router.post('/add-crop', LogController.addCrop);
 
 router.get('/collections', LogController.allCollections);

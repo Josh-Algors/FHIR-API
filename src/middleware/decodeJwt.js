@@ -1,3 +1,4 @@
+const jwt = require('jsonwebtoken');
 const jwt_decode = require('jwt-decode');
 const Joi = require('joi');
 const helpers = require('../config/helpers');
@@ -23,7 +24,6 @@ const decodeMiddleware = (req,res,next) =>{
     try
     {
         var decoded = jwt_decode(token);
-        console.log(decoded);
         req.body = decoded;
         next()
     }
@@ -47,6 +47,33 @@ function authMiddleware(req, res, next) {
     } else {
       res.status(401).json({ message: 'Authentication failed' });
     }
-  }
+}
 
-module.exports = {decodeMiddleware, authMiddleware};
+// Middleware to verify the JWT token
+function verifyToken (req, res, next) {
+
+    const token = getTokenFromHeader(req);
+  
+    if (!token) {
+        res.status(401).json({ message: 'Authentication failed' });
+    }
+  
+    try {
+      const decoded = jwt.verify(token, process.env.SECRET);
+      req.user = decoded;
+    } catch (err) {
+      return res.status(401).send('Invalid Token');
+    }
+    
+    return next();
+  };
+
+  const getTokenFromHeader = (req) => {
+    if (req.headers.authorization && req.headers.authorization.startsWith('Bearer ')) {
+      return req.headers.authorization.split(' ')[1];
+    }
+    return null;
+  };
+  
+
+module.exports = {decodeMiddleware, authMiddleware, verifyToken};
