@@ -433,7 +433,7 @@ const feedback = async (req, res, next) => {
   }
 
   const {isHuman, feedback} = req.body;
-  const data = {isHuman, feedback, slider_id: req.params.slider_id, user_id: req.user._id.toString()};
+  const data = {isHuman, feedback, slider_id: req.params.slider_id, user_id: req.user.user_id.toString()};
 
   await logRepository.logFeedback(data);
 
