@@ -462,7 +462,8 @@ const setFavorite = async (req, res, next) => {
 
   const {rating} = req.body;
 
-  const data = {slider_id: req.params.slider_id, user_id: req.user._id.toString(), rating};
+  console.log(req.user);
+  const data = {slider_id: req.params.slider_id, user_id: req.user.user_id.toString(), rating};
 
   const checkFavorite = await logRepository.checkFavorite(data);
 
