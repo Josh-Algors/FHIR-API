@@ -231,4 +231,67 @@ module.exports = {
     }
 
   },
+
+  //singleTemplate
+  singleTemplate: async (req, res, next) => {
+    
+    try
+    {
+        const info = await logService.singleTemplate(req);
+
+        return res.status(200).json(helpers.sendSuccess("successful!", info));
+    } 
+    catch (error)
+    {
+        if(error.status)
+        {
+            return res.status(error.status).json(helpers.sendError(error.message, error.status));
+        }
+
+        return res.status(500).json(helpers.sendError(error.message, 500));
+    }
+
+  },
+
+  //feedbackLogs
+  feedbackLogs: async (req, res, next) => {
+    
+    try
+    {
+        const info = await logService.feedbackLogs(req);
+
+        return res.status(200).json(helpers.sendSuccess("successful!", info));
+    } 
+    catch (error)
+    {
+        if(error.status)
+        {
+            return res.status(error.status).json(helpers.sendError(error.message, error.status));
+        }
+
+        return res.status(500).json(helpers.sendError(error.message, 500));
+    }
+
+  },
+
+//   saveConfig
+saveConfig: async (req, res, next) => {
+    
+    try
+    {
+        const info = await logService.saveConfig(req);
+
+        return res.status(200).json(helpers.sendSuccess("successful!", info));
+    } 
+    catch (error)
+    {
+        if(error.status)
+        {
+            return res.status(error.status).json(helpers.sendError(error.message, error.status));
+        }
+
+        return res.status(500).json(helpers.sendError(error.message, 500));
+    }
+
+  },
 };

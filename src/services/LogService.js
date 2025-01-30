@@ -3,6 +3,8 @@ const logRepository = require("../repositories/LogRepository");
 const genAIService = require("./GenAIService");
 const helpers = require("../config/helpers");
 const sharp = require('sharp');
+const fs = require('fs');
+const path = require('path');
 const { get } = require("mongoose");
 
 const createImages = async (req, res, next) => {
@@ -530,9 +532,11 @@ const allTemplates = async (req, res, next) => {
 //allFavorites
 const allFavorites = async (req, res, next) => {
 
-  const favorites = await logRepository.favorites(req.user._id);
+  const favorites = await logRepository.favorites(req.user.user_id);
   var collection = [];
   count = 1
+
+  console.log(favorites.length);
 
   if(favorites.length > 0)
   {
@@ -598,6 +602,19 @@ const allCollections = async (req, res, next) => {
 
   return info;
 
+};
+
+const singleTemplate = async (req, res, next) => {
+
+  if(!req.params.t_id)
+  {
+    return helpers.newError("Unable to complete request!", 400);
+  }
+
+  const info = await logRepository.singleTemplate(req.params.t_id);
+
+  return info;
+  
 };
 
 const interactionLogs = async (req, res, next) => {
@@ -696,6 +713,103 @@ const favoriteLogs = async (req, res, next) => {
 
 };
 
+//feedbackLogs
+const feedbackLogs = async (req, res, next) => {
+
+  const info = await logRepository.feedbackLogs();
+
+  var users = [];
+  var otherInf = [];
+
+  for (inf of info)
+  {
+    const checkTemplate = await logRepository.findTemplate(inf.slider_id.template_id);
+
+    if(!users.includes(inf.user_id.email))
+    {
+      const data = {
+        user: inf.user_id.email,
+        template_id: checkTemplate.type,
+        eyes: inf.slider_id.eyes,
+        nose: inf.slider_id.nose,
+        mouth: inf.slider_id.mouth,
+        is_human: inf.is_human,
+        feedback: inf.feedback,
+        createdAt: inf.createdAt
+      };
+
+      users.push(inf.user_id.email);
+      otherInf.push(data);
+    }
+    else
+    {
+      const data = {
+        user: inf.user_id.email,
+        template_id: checkTemplate.type,
+        eyes: inf.slider_id.eyes,
+        nose: inf.slider_id.nose,
+        mouth: inf.slider_id.mouth,
+        human_or_robot: inf.slider_id.human_or_robot,
+        rating: inf.rating,
+        createdAt: inf.createdAt
+      };
+
+      otherInf.push(data);
+    }
+  }
+
+  return otherInf;
+
+};
+
+const saveConfig = async (req, res, next) => {
+
+  const setGradingSchema = Joi.object().keys({
+    template_id: Joi.string().required(),
+    eyes: Joi.string().allow('').required(),
+    nose: Joi.string().allow('').required(),
+    mouth: Joi.string().allow('').required(),
+    x: Joi.number().required(),
+    y: Joi.number().required(),
+    h: Joi.number().required(),
+    w:Joi.number().required()
+    
+  }).unknown();
+
+  const validate = setGradingSchema.validate(req.body);
+
+  if (validate.error != null) {
+    const errorMessage = validate.error.details.map((i) => i.message).join(".");
+    throw new Error(errorMessage);
+  }
+
+  const { template_id, eyes, nose, mouth, x, y, h, w } = req.body;
+
+  console.log(req.file);
+
+  if (!req.file)
+  {
+    return res.status(400).json({ error: 'No file uploaded.' });
+  }
+
+
+  if(req.file.mimetype != 'image/png')
+  {
+      return helpers.newError("Invalid file type! allowed formats(png)", 400);
+  }
+    
+    const base_64 = req.file.buffer.toString('base64');
+
+    const data = { template_id, eyes, nose, mouth, x, y, h, w, base_64 }
+
+    await logRepository.addCroppedImages(data);
+
+    return;
+
+};
+
+
+
 module.exports = {
   createImage,
   getInfos,
@@ -707,5 +821,8 @@ module.exports = {
   addCrop,
   allCollections,
   interactionLogs,
-  favoriteLogs
+  favoriteLogs,
+  singleTemplate,
+  feedbackLogs,
+  saveConfig
 };

@@ -145,7 +145,7 @@ const checkSlider = async (data) => {
 
  //favorites
  const favorites = async (user_id) => {
-
+console.log(user_id);
     const info = await Preference.find({
          user_id: user_id
      });
@@ -160,7 +160,11 @@ const checkSlider = async (data) => {
          eyes: data.eyes,
          nose: data.nose,
          mouth: data.mouth,
-         base_64: ""
+         base_64: data.base_64,
+         x: data.x,
+         y: data.y,
+         h: data.h,
+         w: data.w
      });
  
      return info;
@@ -226,6 +230,16 @@ const checkSlider = async (data) => {
      return info;
  };
 
+ //singleTemplate
+ const singleTemplate = async (template_id) => {
+
+    const info = await Cropped.find({
+         template_id: template_id
+     }).select(['eyes', 'nose', 'mouth']);
+ 
+     return info;
+ };
+
  const allCollections = async (col_name) => {
 
     const collections = await mongoose.connection.db.listCollections().toArray();
@@ -271,6 +285,16 @@ const findTemplate = async (template_id) => {
     return info;
  }
 
+ //feedbackLogs
+ const feedbackLogs = async () => {
+
+    const info = await Feedback.find().populate('user_id').populate({
+        path: 'slider_id',
+        select: ['-base_64']
+    });
+
+    return info;
+ }
 
 module.exports = {
     logFeedback,
@@ -293,5 +317,7 @@ module.exports = {
     allCollections,
     allLogs,
     findTemplate,
-    preferenceLogs
+    preferenceLogs,
+    feedbackLogs,
+    singleTemplate
 }
