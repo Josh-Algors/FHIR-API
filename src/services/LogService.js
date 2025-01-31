@@ -99,7 +99,7 @@ const createImage = async (req, res, next) => {
   }
 
   const {template_id, human_or_robot, eyes, nose, mouth} = req.body;
-  const data = {user_id: req.user._id, human_or_robot, eyes, nose, mouth, template_id};
+  const data = {user_id: req.user.user_id, human_or_robot, eyes, nose, mouth, template_id};
 
   const description = `${eyes}, ${nose}, ${mouth}, without touching the other parts of the face.`;
 
@@ -171,6 +171,8 @@ const createImage = async (req, res, next) => {
 
   data.slider_id = image_id;
   await logRepository.logUserSlider(data);
+
+  console.log("user_id", data.user_id);
 
   return {
     slider_id: image_id,
