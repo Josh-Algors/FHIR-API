@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const multer = require('multer');
 const LogController = require('../controllers/LogController');
+const cacheLogger = require('../middleware/cacheLogger').cacheMiddleware;
 const passport = require('passport');
 require('../config/passport');
 
@@ -16,13 +17,13 @@ const upload = multer({ storage: storage });
 
 
 //logs
-router.post('/generate', [jwtMiddleWare, verifyToken], LogController.createEvent);
+router.post('/generate', [jwtMiddleWare, verifyToken, cacheLogger], LogController.createEvent);
 router.post('/feedback/:slider_id', [jwtMiddleWare, verifyToken], LogController.feedback);
 router.post('/favorite/:slider_id', [jwtMiddleWare, verifyToken], LogController.setFavorite);
-router.get('/list', [jwtMiddleWare, verifyToken], LogController.getInfos);
+router.get('/list', [jwtMiddleWare, verifyToken, cacheLogger], LogController.getInfos);
 router.post('/templates/add', LogController.addTemplate);
-router.get('/templates', LogController.allTemplates);
-router.get('/templates/:t_id', LogController.singleTemplate);
+router.get('/templates', [cacheLogger], LogController.allTemplates);
+router.get('/templates/:t_id', [cacheLogger], LogController.singleTemplate);
 router.get('/favorites', [jwtMiddleWare, verifyToken], LogController.allFavorites);
 router.post('/add-crop', LogController.addCrop);
 

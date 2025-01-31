@@ -110,6 +110,22 @@ const createImage = async (req, res, next) => {
     return helpers.newError("Invalid template! Try again", 400);
   }
 
+  const slider_info = await logRepository.checkSlider(data);
+
+  var image_base64 = "";
+  var image_id = "";
+
+  if(slider_info)
+  {
+    image_base64 = slider_info.base_64;
+    image_id = slider_info._id.toString();
+    console.log("retrived");
+    return {
+      slider_id: image_id,
+      image_base64: image_base64
+    };
+  }
+
   const eyesImage = await logRepository.getEyes(template_id, eyes);
   const noseImage = await logRepository.getNose(template_id, nose);
   const mouthImage = await logRepository.getMouth(template_id, mouth);
@@ -120,9 +136,9 @@ const createImage = async (req, res, next) => {
   const croppedNoseImage = await cropImageToBase64(noseImage.base_64, imageAxis.nose);
   const croppedMouthImage = await cropImageToBase64(mouthImage.base_64, imageAxis.mouth);
 
-  console.log(checkTemplate.type, imageAxis.eyes);
-  console.log(imageAxis.nose);
-  console.log(imageAxis.mouth);
+  // console.log(checkTemplate.type, imageAxis.eyes);
+  // console.log(imageAxis.nose);
+  // console.log(imageAxis.mouth);
 
   const finalConfig = [{
       image: croppedEyesImage,
@@ -140,32 +156,18 @@ const createImage = async (req, res, next) => {
 
   const getImage = await generateImage(checkTemplate.url, finalConfig, type=human_or_robot);
 
-  const slider_info = await logRepository.checkSlider(data);
 
-  var image_base64 = "";
-  var image_id = ""
+  const isValidImage = helpers.isValidBase64Image(getImage);
 
-  if(!slider_info)
+  if(!isValidImage)
   {
-
-    const isValidImage = helpers.isValidBase64Image(getImage);
-
-    if(!isValidImage)
-    {
-      return helpers.newError("Unable to generate image! Try again", 400);
-    }
-    
-    const info = await logRepository.logSlider(data, getImage);
-    console.log(data);
-
-    image_base64 = getImage;
-    image_id = info._id.toString();
+    return helpers.newError("Unable to generate image! Try again", 400);
   }
-  else
-  {
-    image_base64 = slider_info.base_64;
-    image_id = slider_info._id.toString();
-  }
+  
+  const info = await logRepository.logSlider(data, getImage);
+
+  image_base64 = getImage;
+  image_id = info._id.toString();
 
   data.slider_id = image_id;
   await logRepository.logUserSlider(data);
@@ -213,7 +215,6 @@ const generateImage = async (baseImage, overlays, type, outputFormat = 'png', fe
         top: overlay.others.y
       });
 
-      console.log(compositeInputs);
     }
 
     const outputBuffer = await image
@@ -356,8 +357,6 @@ const cropImageToBase64 = async (input, axis, format = 'png') => {
 
     const baseFile = Buffer.from(input, 'base64');
 
-    console.log(await sharp(baseFile).metadata());
-
     const croppedBuffer = await sharp(baseFile)
       .extract({ left: axis.x, top: axis.y, width: axis.h, height: axis.w }) // define the crop region
       [format]() // optionally set the output format
@@ -372,7 +371,6 @@ const cropImageToBase64 = async (input, axis, format = 'png') => {
 
     return base64Image;
   } catch (error) {
-    console.error('Error cropping image:', error);
     throw error;
   }
 }

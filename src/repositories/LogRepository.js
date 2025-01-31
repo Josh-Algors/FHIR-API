@@ -58,6 +58,7 @@ const checkFavorite = async (data) => {
 const checkSlider = async (data) => {
 
     const info = await Image.findOne({
+        template_id: data.template_id,
          human_or_robot: data.human_or_robot,
          eyes: data.eyes,
          nose: data.nose,
