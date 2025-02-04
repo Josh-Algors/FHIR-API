@@ -109,7 +109,7 @@ const createImage = async (req, res, next) => {
   {
     return helpers.newError("Invalid template! Try again", 400);
   }
-
+ 
   const slider_info = await logRepository.checkSlider(data);
 
   var image_base64 = "";
@@ -749,8 +749,8 @@ const feedbackLogs = async (req, res, next) => {
         eyes: inf.slider_id.eyes,
         nose: inf.slider_id.nose,
         mouth: inf.slider_id.mouth,
-        human_or_robot: inf.slider_id.human_or_robot,
-        rating: inf.rating,
+        is_human: inf.is_human,
+        feedback: inf.feedback,
         createdAt: inf.createdAt
       };
 
