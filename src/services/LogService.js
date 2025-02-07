@@ -730,7 +730,9 @@ const feedbackLogs = async (req, res, next) => {
   for (inf of info)
   {
     console.log(inf);
-    const checkTemplate = await logRepository.findTemplate(inf.slider_id.template_id);
+    if(inf.slider_id)
+    {
+      const checkTemplate = await logRepository.findTemplate(inf.slider_id.template_id);
 
     if(!users.includes(inf.user_id.email))
     {
@@ -762,6 +764,7 @@ const feedbackLogs = async (req, res, next) => {
       };
 
       otherInf.push(data);
+    }
     }
   }
 
