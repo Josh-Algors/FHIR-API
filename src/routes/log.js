@@ -33,6 +33,8 @@ router.get('/preference/logs', [logMiddleware], LogController.favLogs);
 router.get('/feedback/logs', [logMiddleware], LogController.feedbackLogs);
 
 router.post('/save', [upload.single('file')], LogController.saveConfig);
+router.post('/create-slider-base', LogController.sliderBase);
+router.get('/slider-base', [jwtMiddleWare, verifyToken], LogController.allSliderBase);
 
 
 

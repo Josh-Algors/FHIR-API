@@ -297,6 +297,45 @@ const findTemplate = async (template_id) => {
     return info;
  }
 
+ const addSliderBase = async (data) => {
+
+    const info = await Image.create({
+        template_id: data.template_id,
+        base_64: data.checkCropped.base_64,
+        eyes: data.checkCropped.eyes,
+        nose: data.checkCropped.nose,
+        mouth: data.checkCropped.mouth,
+        human_or_robot: data.checkCropped.human_or_robot,
+    });
+
+    return info;
+
+ }
+
+ //checkCroppedImages
+ const checkCroppedImages = async (crop_id) => {
+
+    const info = await Cropped.findOne({
+        _id: crop_id
+    });
+
+    return info;
+
+ }
+
+
+ const allSliderBase = async (data) => {
+
+    const info = await Image.find({
+        eyes: "base-image",
+        nose: "base-image",
+        mouth: "base-image"
+    });
+
+    return info;
+
+ }
+
 module.exports = {
     logFeedback,
     logFavorite,
@@ -320,5 +359,8 @@ module.exports = {
     findTemplate,
     preferenceLogs,
     feedbackLogs,
-    singleTemplate
+    singleTemplate,
+    addSliderBase,
+    allSliderBase,
+    checkCroppedImages
 }

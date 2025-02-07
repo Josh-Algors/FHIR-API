@@ -294,4 +294,46 @@ saveConfig: async (req, res, next) => {
     }
 
   },
+
+  //sliderBase
+  sliderBase: async (req, res, next) => {
+    
+    try
+    {
+        const info = await logService.sliderBase(req);
+
+        return res.status(200).json(helpers.sendSuccess("successful!", info));
+    } 
+    catch (error)
+    {
+        if(error.status)
+        {
+            return res.status(error.status).json(helpers.sendError(error.message, error.status));
+        }
+
+        return res.status(500).json(helpers.sendError(error.message, 500));
+    }
+
+  },
+
+  //allSliderBase
+  allSliderBase: async (req, res, next) => {
+    
+    try
+    {
+        const info = await logService.allSliderBase(req);
+
+        return res.status(200).json(helpers.sendSuccess("successful!", info));
+    } 
+    catch (error)
+    {
+        if(error.status)
+        {
+            return res.status(error.status).json(helpers.sendError(error.message, error.status));
+        }
+
+        return res.status(500).json(helpers.sendError(error.message, 500));
+    }
+
+  },
 };

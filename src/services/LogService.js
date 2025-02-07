@@ -6,6 +6,7 @@ const sharp = require('sharp');
 const fs = require('fs');
 const path = require('path');
 const { get } = require("mongoose");
+const { log } = require("console");
 
 const createImages = async (req, res, next) => {
 
@@ -818,6 +819,50 @@ const saveConfig = async (req, res, next) => {
 
 };
 
+const sliderBase = async (req, res, next) => {
+  const setSlider = Joi.object().keys({
+    template_id: Joi.string().required(),
+    crop_id: Joi.string().required(),
+    human_or_robot: Joi.string().required(),
+  }).unknown();
+
+  const validate = setSlider.validate(req.body);
+
+  if (validate.error != null) {
+    const errorMessage = validate.error.details.map((i) => i.message).join(".");
+    throw new Error(errorMessage);
+  }
+
+  const { template_id, crop_id } = req.body;
+
+  const checkTemplate = await logRepository.checkTemplateById(template_id);
+
+  if(!checkTemplate)
+  {
+    return helpers.newError("Unable to find template!", 400);
+  }
+
+  const checkCropped = await logRepository.checkCroppedImages(crop_id);
+
+  if(!checkCropped)
+  {
+    return helpers.newError("Unable to find cropped image!", 400);
+  }
+
+  const data = {template_id, crop_id, checkCropped};
+  await logRepository.addSliderBase(data);
+
+  return;
+}
+
+//allSliderBase
+const allSliderBase = async (req, res, next) => {
+  
+  const info = await logRepository.allSliderBase();
+
+  return info;
+}
+
 
 
 module.exports = {
@@ -834,5 +879,7 @@ module.exports = {
   favoriteLogs,
   singleTemplate,
   feedbackLogs,
-  saveConfig
+  saveConfig,
+  sliderBase,
+  allSliderBase
 };
