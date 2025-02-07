@@ -330,7 +330,7 @@ const findTemplate = async (template_id) => {
         eyes: "base-image",
         nose: "base-image",
         mouth: "base-image"
-    });
+    }).select(['-base_64']);
 
     return info;
 
