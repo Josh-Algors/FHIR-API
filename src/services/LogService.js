@@ -625,7 +625,9 @@ const interactionLogs = async (req, res, next) => {
 
   for (inf of info)
   {
-    const checkTemplate = await logRepository.findTemplate(inf.slider_id.template_id);
+    if(inf.slider_id)
+    {
+      const checkTemplate = await logRepository.findTemplate(inf.slider_id.template_id);
 
     if(!users.includes(inf.user_id.email))
     {
@@ -656,6 +658,7 @@ const interactionLogs = async (req, res, next) => {
 
       otherInf.push(data);
     }
+    }
   }
 
   helpers.calculateTimeSpent(otherInf);
@@ -674,7 +677,9 @@ const favoriteLogs = async (req, res, next) => {
 
   for (inf of info)
   {
-    const checkTemplate = await logRepository.findTemplate(inf.slider_id.template_id);
+    if(inf.slider_id)
+    {
+      const checkTemplate = await logRepository.findTemplate(inf.slider_id.template_id);
 
     if(!users.includes(inf.user_id.email))
     {
@@ -706,6 +711,7 @@ const favoriteLogs = async (req, res, next) => {
       };
 
       otherInf.push(data);
+    }
     }
   }
 
