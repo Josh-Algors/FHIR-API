@@ -626,7 +626,7 @@ const interactionLogs = async (req, res, next) => {
 
   for (inf of info)
   {
-    if(inf.slider_id)
+    if(inf.slider_id && inf.user_id.email != "test@gmail.com")
     {
       const checkTemplate = await logRepository.findTemplate(inf.slider_id.template_id);
 
@@ -678,7 +678,7 @@ const favoriteLogs = async (req, res, next) => {
 
   for (inf of info)
   {
-    if(inf.slider_id)
+    if(inf.slider_id && inf.user_id.email != "test@gmail.com")
     {
       const checkTemplate = await logRepository.findTemplate(inf.slider_id.template_id);
 
@@ -731,7 +731,7 @@ const feedbackLogs = async (req, res, next) => {
   for (inf of info)
   {
     console.log(inf);
-    if(inf.slider_id)
+    if(inf.slider_id && inf.user_id.email != "test@gmail.com")
     {
       const checkTemplate = await logRepository.findTemplate(inf.slider_id.template_id);
 
