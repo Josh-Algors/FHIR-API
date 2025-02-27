@@ -11,6 +11,21 @@ const logRouter = require("./routes/log");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+  );
+
+  if (req.method == "OPTIONS") {
+    res.header("Access-Control-Allow-Methods", "PUT, POST, DELETE, PATCH, GET");
+    return res.status(200).json({});
+  }
+
+  next();
+});
+
 // Parse JSON bodies for all requests
 app.use(bodyParser.json());
 

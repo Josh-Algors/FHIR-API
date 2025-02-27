@@ -19,6 +19,7 @@ passport.use(new JwtStrategy(opts, async (jwt_payload, done) => {
     try
     {
         var checkToken = await Oauth.findOne({
+                user_id: jwt_payload.user_id,
                 email: jwt_payload.email,
                 iat: jwt_payload.iat,
                 exp: jwt_payload.exp,
