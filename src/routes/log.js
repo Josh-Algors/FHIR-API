@@ -16,25 +16,22 @@ const upload = multer({ storage: storage });
 
 
 
-//logs
-router.post('/generate', [jwtMiddleWare, verifyToken, cacheLogger], LogController.createEvent);
-router.post('/feedback/:slider_id', [jwtMiddleWare, verifyToken], LogController.feedback);
-router.post('/favorite/:slider_id', [jwtMiddleWare, verifyToken], LogController.setFavorite);
-router.get('/list', [jwtMiddleWare, verifyToken, cacheLogger], LogController.getInfos);
-router.post('/templates/add', LogController.addTemplate);
-router.get('/templates', [cacheLogger], LogController.allTemplates);
-router.get('/templates/:t_id', [cacheLogger], LogController.singleTemplate);
-router.get('/favorites', [jwtMiddleWare, verifyToken], LogController.allFavorites);
-router.post('/add-crop', LogController.addCrop);
+// //logs
+//patients
+router.get('/patients', [jwtMiddleWare, verifyToken, cacheLogger], LogController.getPatients);
+router.post('/treatment', [jwtMiddleWare, verifyToken], LogController.getTreatment);
+router.post('/assign-doctor', [jwtMiddleWare, verifyToken], LogController.assignDoctor);
 
-router.get('/collections', LogController.allCollections);
-router.get('/logs', [logMiddleware], LogController.interactionLogs);
-router.get('/preference/logs', [logMiddleware], LogController.favLogs);
-router.get('/feedback/logs', [logMiddleware], LogController.feedbackLogs);
+//guardians
+router.get('/guardians', [jwtMiddleWare, verifyToken, cacheLogger], LogController.getGuardians);
+router.get('/assigned-patients', [jwtMiddleWare, verifyToken], LogController.getAllAssignedPatients);
 
-router.post('/save', [upload.single('file')], LogController.saveConfig);
-router.post('/create-slider-base', LogController.sliderBase);
-router.get('/slider-base', [jwtMiddleWare, verifyToken], LogController.allSliderBase);
+//doctors
+router.get('/all-symptoms', [jwtMiddleWare, verifyToken], LogController.allSymptomsOfAssignedPatients);
+router.post('/assign-guardian', [jwtMiddleWare, verifyToken], LogController.assignCaregiver);
+router.get('/doctors', [jwtMiddleWare, verifyToken], LogController.getDoctors);
+router.post('/prescriptions', [jwtMiddleWare, verifyToken], LogController.prescriptions);
+router.get('/assigned-patients-doctor', [jwtMiddleWare, verifyToken], LogController.getAllAssignedPatientsFromDoctor);
 
 
 

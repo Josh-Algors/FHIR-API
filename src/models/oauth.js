@@ -5,6 +5,10 @@ const oauthSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId
     },
     email: String,
+    type: {
+        type: String,
+        enum : ['doctor','patient', 'guardian']
+    },
     iat: Number,
     exp: Number
 });
